@@ -506,8 +506,8 @@ section {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
   position: relative;
   color: #37517e;
 }
