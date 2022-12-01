@@ -59,6 +59,7 @@
                 <ul>
                   <li><a href="bug2.html">BUG 2 Algorithm</a></li>
                   <li><a href="a_star.html">A-Star Algorithm</a></li>
+                  <li><a href="slam.html">Autonomous Robot</a></li>
                 </ul>
               </li>
                 
@@ -226,11 +227,11 @@
                     </ul>
             </div>
             <div class="portfolio-description">
-              <h4 style="color: whitesmoke"><u>Objective</u>: To take the glass plate images and automatically produce a color image with as few visual artifacts as possible. </h4>
-              <p style="color: whitesmoke">
+              <h4 style="color: wheat"><u>Objective</u>: To take the glass plate images and automatically produce a color image with as few visual artifacts as possible. </h4>
+              <p style="color: wheat">
                   <strong><u>Methodology</u></strong>: To achieve the objective we crop and extract the three-color channel images and place them on top of each other and align them so that they form a single RGB color image. From these three channels we keep the blue channel static and try to align the red and green channel on top of blue channel. The easiest way to align parts is to exhaustively search over a window of possible displacement say [-15,15] pixels, and then score each one using the Sum of Squared Differences SSD 〖sum(sum((image1-image2)〗^2)) and Normalized Cross-Correlation NCC (image1. /|image1| and image2. /|image2|).
                   </p>
-            <p style="color: whitesmoke">
+            <p style="color: wheat">
                   Another method to perform alignment is by performing feature detection and align the images based on the best fit of features. To achieve this, we detect the corners as our features in image using the Harris Corner Detector and chooses the top 200 features in the given image. Then use RANSAC algorithm that randomly picks a feature in image 1 say blue channel Image and assumes it aligns with a similar feature in image2 say green channel image. 
                   </p>
             </div>

@@ -59,6 +59,7 @@
                 <ul>
                   <li><a href="bug2.html">BUG 2 Algorithm</a></li>
                   <li><a href="a_star.html">A-Star Algorithm</a></li>
+                  <li><a href="slam.html">Autonomous Robot</a></li>
                 </ul>
               </li>
                 
@@ -215,11 +216,11 @@
                     </ul>
             </div>
             <div class="portfolio-description">
-              <h4 style="color: whitesmoke"><u>Objective</u>: To identify name of the book by detecting features on the book in live frame and matching it with the features with other books in list and giving out the name of the book with most matches. </h4>
-              <p style="color: whitesmoke">
+              <h4 style="color: wheat"><u>Objective</u>: To identify name of the book by detecting features on the book in live frame and matching it with the features with other books in list and giving out the name of the book with most matches. </h4>
+              <p style="color: wheat">
                   <strong><u>ORB</u></strong>: ORB is a fusion of FAST(Features from Accelerated Segment Test) keypoint detector and BRIEF(Binary Robust Independent Elementary Features) descriptor. First it uses the FAST to find the keypoints, then apply Harris Corner measure to find the top N points among them. After detecting keypoint we go on to compute a descriptor for every one of them. ORB uses BRIEF descriptors, this feature descriptors encode interesting information into a series of numbers and act as a sort of numberical fingerprint that can be used to differentiate one feature from another.
               </p>
-              <p style="color: whitesmoke">
+              <p style="color: wheat">
                   Similarly, here the keypoints and descriptors of the live frame and training image are detected using ORB. Then for matching the computed descriptors KNN classifier is used for classification of various descriptors into the categories in the image and matched by Brute Force Approach. This approach takes the classifed descriptor by KNN from live frame and matches it with all the descriptors in same category in the training image. This extensively reduces the computational time and is very fast and accurate. 
             </p>
              </div>

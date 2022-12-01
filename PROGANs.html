@@ -59,6 +59,7 @@
                 <ul>
                   <li><a href="bug2.html">BUG 2 Algorithm</a></li>
                   <li><a href="a_star.html">A-Star Algorithm</a></li>
+                  <li><a href="slam.html">Autonomous Robot</a></li>
                 </ul>
               </li>
                 
@@ -224,14 +225,14 @@
               </ul>
             </div>
             <div class="portfolio-description">
-              <h4 style="color: whitesmoke"><u>Objective</u>: To perform the automatic Image Generation using the Progressively Growing Generative Adversarial Network architecture. </h4>
-              <p style="color: whitesmoke">
+              <h4 style="color: wheat"><u>Objective</u>: To perform the automatic Image Generation using the Progressively Growing Generative Adversarial Network architecture. </h4>
+              <p style="color: wheat">
                   <strong>PROGANs</strong> as the name suggests Progressively Growing GAN, it involves training by starting with a very small size image and then the blocks of layers added incrementally so that the output size of the generator model increases and increases the input size of the discriminator model until the desired image size is obtained. This type of approach are very effective at generating high quality synthetic images that are highly realistic.
               </p>
                 
-              <p style="color: whitesmoke">This incremental nature allows the training to first discover the large scale structure of the image distribution and then shift attention to increasingly finer scale detail, instead of having to learn all scales simultaneously. Our training starts with both the generator (G) and discriminator (D), having a low spatial resolution of 4x4 pixels. as the training advances, we incrementally add layers to G and D thus increasing the spatial resolution of the generated images.</p>
+              <p style="color: wheat">This incremental nature allows the training to first discover the large scale structure of the image distribution and then shift attention to increasingly finer scale detail, instead of having to learn all scales simultaneously. Our training starts with both the generator (G) and discriminator (D), having a low spatial resolution of 4x4 pixels. as the training advances, we incrementally add layers to G and D thus increasing the spatial resolution of the generated images.</p>
                 
-              <p style="color: whitesmoke"> In this experiment, instead of using batch normalization as is commonly done, the pixel normalization is used. It has no trainable weights, it normalizes the feature vector in each pixel to unit length, and is applied after the convolutional layers in the generator. This prevents the signal magnitudes from spiraling out of control and ensures the healthy competition between generator and discriminator.  </p> 
+              <p style="color: wheat"> In this experiment, instead of using batch normalization as is commonly done, the pixel normalization is used. It has no trainable weights, it normalizes the feature vector in each pixel to unit length, and is applied after the convolutional layers in the generator. This prevents the signal magnitudes from spiraling out of control and ensures the healthy competition between generator and discriminator.  </p> 
                 
 <!--
               <p style="color: whitesmoke">We train both the networks in alternating steps and lock them in fierce competition to improve themselves. Eventually, the discriminator identifies the tiny difference between real and the generated images, and the generator creates images that the discriminator cannot tell the difference. The DCGAN model eventually converges  and produces natural looking images.

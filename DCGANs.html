@@ -59,6 +59,7 @@
                 <ul>
                   <li><a href="bug2.html">BUG 2 Algorithm</a></li>
                   <li><a href="a_star.html">A-Star Algorithm</a></li>
+                  <li><a href="slam.html">Autonomous Robot</a></li>
                 </ul>
               </li>
                 
@@ -210,16 +211,16 @@
               </ul>
             </div>
             <div class="portfolio-description">
-              <h4 style="color: whitesmoke"><u>Objective</u>: To perform the automatic Image Generation using the Deep Convolutional Generative Adversarial Network architecture. </h4>
-              <p style="color: whitesmoke">
+              <h4 style="color: wheat"><u>Objective</u>: To perform the automatic Image Generation using the Deep Convolutional Generative Adversarial Network architecture. </h4>
+              <p style="color: wheat">
                   <strong>DCGANs</strong> uses convolutional and convolutional-transpose layers in the generator and discriminator. The generator is able to take random noise and map it into images such that the discriminator cannot tell which images came from the dataset and which images came from the generator.
               </p>
                 
-              <p style="color: whitesmoke"><strong>The generator</strong> takes 100x1 random noise as input and expands to 4x4x1024, 8x8x512, 16x16x256, 32x32x128, 64x64x3. All this layers consists of convolutional layers with 5x5 filter size, LeakyRelu as activation function at each layer except the last layer which consist of Tanh as activation function. But a generator alone will just create random noise, conceptually the discriminator in GAN provides guidance to the generator on what images to create. By training on real images and generated images, DCGAN builds a discriminator to learn what feature makes images real. </p>
+              <p style="color: wheat"><strong>The generator</strong> takes 100x1 random noise as input and expands to 4x4x1024, 8x8x512, 16x16x256, 32x32x128, 64x64x3. All this layers consists of convolutional layers with 5x5 filter size, LeakyRelu as activation function at each layer except the last layer which consist of Tanh as activation function. But a generator alone will just create random noise, conceptually the discriminator in GAN provides guidance to the generator on what images to create. By training on real images and generated images, DCGAN builds a discriminator to learn what feature makes images real. </p>
                 
-              <p style="color: whitesmoke"><strong>The discriminator</strong> looks at real images and generated images separately, it distinguishes whether the input image to the discriminator is real or generated. The output is the probability that the input is real. We train the discriminator just like a deep network classifier, so that if the input is real the discriminator will output 1 and if the input is generated image then it will be zero. Through this process, the discriminator identifies features that contribute to real images. So, we want the generator to generate the images which can match the real image, so we train generator with backpropagation which takes the target values all the way back to generator which helps generator to create images that towards what the discriminator thinks it is real.</p> 
+              <p style="color: wheat"><strong>The discriminator</strong> looks at real images and generated images separately, it distinguishes whether the input image to the discriminator is real or generated. The output is the probability that the input is real. We train the discriminator just like a deep network classifier, so that if the input is real the discriminator will output 1 and if the input is generated image then it will be zero. Through this process, the discriminator identifies features that contribute to real images. So, we want the generator to generate the images which can match the real image, so we train generator with backpropagation which takes the target values all the way back to generator which helps generator to create images that towards what the discriminator thinks it is real.</p> 
                 
-              <p style="color: whitesmoke">We train both the networks in alternating steps and lock them in fierce competition to improve themselves. Eventually, the discriminator identifies the tiny difference between real and the generated images, and the generator creates images that the discriminator cannot tell the difference. The DCGAN model eventually converges  and produces natural looking images.
+              <p style="color: wheat">We train both the networks in alternating steps and lock them in fierce competition to improve themselves. Eventually, the discriminator identifies the tiny difference between real and the generated images, and the generator creates images that the discriminator cannot tell the difference. The DCGAN model eventually converges  and produces natural looking images.
                   
                 </p>
                 

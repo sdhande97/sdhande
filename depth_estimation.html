@@ -59,6 +59,7 @@
                 <ul>
                   <li><a href="bug2.html">BUG 2 Algorithm</a></li>
                   <li><a href="a_star.html">A-Star Algorithm</a></li>
+                  <li><a href="slam.html">Autonomous Robot</a></li>
                 </ul>
               </li>
                 
@@ -218,14 +219,14 @@
                     </ul>
             </div>
             <div class="portfolio-description">
-              <h4 style="color: whitesmoke"><u>Objective</u>: Depth estimation from a single image using encoder-decoder architecture with skip connections and with the help of transfer learning. </h4>
-              <p style="color: whitesmoke">
+              <h4 style="color: wheat"><u>Objective</u>: Depth estimation from a single image using encoder-decoder architecture with skip connections and with the help of transfer learning. </h4>
+              <p style="color: wheat">
                   The dataset used was NYU Depth dataset which contains the indoor scenes images along with their raw depth maps of size 620x480. 
               </p>
-              <p style="color: whitesmoke">
+              <p style="color: wheat">
                   <strong><u>DenseNet as Encoder</u></strong>: In a standard CNN, we have an input image, that is then passed through the network to get an output predicted label in a way where the forward pass is quite straight forward as shown in slide 2 fig 1. The DenseNet architecture is all about modifying this standard CNN architecture as shown in slide 2 fig 2. In this each layer is connected to every other layer, the input of every layer inside DenseNet is the concatenation of feature maps from previous layers. 
             </p>
-            <p style="color: whitesmoke">
+            <p style="color: wheat">
                   <strong>So in our case, </strong> the input RGB image along with depth maps are encoded into a feature vector using the DenseNet-169. The encoded feature vector after bottleneck layer are further fed to upsampling layers of decoder architecture. This decoder layers utilizes the skip connections to take the downsampled filters as input from the same level encoder layers and have 1x1 and 3x3 convolutional layers to reduce the number of filters and to construct the final depth map of half the input resolution that is 310x240. 
             </p>
              </div>

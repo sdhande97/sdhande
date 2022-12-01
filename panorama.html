@@ -59,6 +59,7 @@
                 <ul>
                   <li><a href="bug2.html">BUG 2 Algorithm</a></li>
                   <li><a href="a_star.html">A-Star Algorithm</a></li>
+                  <li><a href="slam.html">Autonomous Robot</a></li>
                 </ul>
               </li>
                 
@@ -213,16 +214,16 @@
               </ul>
             </div>
             <div class="portfolio-description">
-              <h4 style="color: whitesmoke"><u>Objective</u>: To stitch the series of images together(pairs of images which share some common region) inorder to generate a panorama using computer vision and image processing techniques. </h4>
-              <p style="color: whitesmoke">
+              <h4 style="color: wheat"><u>Objective</u>: To stitch the series of images together(pairs of images which share some common region) inorder to generate a panorama using computer vision and image processing techniques. </h4>
+              <p style="color: wheat">
                   <strong><u>METHODOLOGY</u></strong>: This technique is divided into 4 steps: <strong>Step 1</strong>: Detecting of keypoints and extracting their particular local invariants descriptors using ORB feature detector from the two images.
               </p>
                 
-              <p style="color: whitesmoke"><strong>Step 2</strong>: Getting the detected descriptors from both the images and matching them by brute force matching method to get the top 150 best similar features in both images.</p>
+              <p style="color: wheat"><strong>Step 2</strong>: Getting the detected descriptors from both the images and matching them by brute force matching method to get the top 150 best similar features in both images.</p>
                 
-              <p style="color: whitesmoke"><strong>Step 3</strong>: After getting the matched descriptors Homography Matrix is calculated using the RANSAC algorithm. Homography is mapping between the two projection planes with same center of projection. It describes the projective geometry of two cameras and a world plane or in simple terms it maps the images of points which lie on a world plane from one camera view to another. In addition to this, RANSAC algorithm is used to filter points that clearly belong to the data distribution from the ones which do not and estimate which pairs are inliers and which are outliers.</p>
+              <p style="color: wheat"><strong>Step 3</strong>: After getting the matched descriptors Homography Matrix is calculated using the RANSAC algorithm. Homography is mapping between the two projection planes with same center of projection. It describes the projective geometry of two cameras and a world plane or in simple terms it maps the images of points which lie on a world plane from one camera view to another. In addition to this, RANSAC algorithm is used to filter points that clearly belong to the data distribution from the ones which do not and estimate which pairs are inliers and which are outliers.</p>
                 
-              <p style="color: whitesmoke"><strong>Step 4</strong>: Once the homography is estimated the images are warpped onto a common plane. Here, perspective transformation is applied to one of the images. This transformation combines one or more operations like rotation, scale, translation or shear. And the idea is to transform one of the images so that both images merge as one which results into stitching of images and generation of panorama.
+              <p style="color: wheat"><strong>Step 4</strong>: Once the homography is estimated the images are warpped onto a common plane. Here, perspective transformation is applied to one of the images. This transformation combines one or more operations like rotation, scale, translation or shear. And the idea is to transform one of the images so that both images merge as one which results into stitching of images and generation of panorama.
             </p>
              </div>
           </div>
