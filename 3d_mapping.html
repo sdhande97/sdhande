@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>3D Reconstruction using Octomap</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/my_icon.png" rel="icon">
+<!--  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.7.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header_inner_page" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">My Portfolio</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+<!--          <li ><a class="nav-link  active scrollto" href="index.html#portfolio" style="color:white">Portfolio</a></li>-->
+            
+          <li class="dropdown"><a href="#"><span>Jump To</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+<!--              <li><a href="#">Drop Down 1</a></li>-->
+              <li class="dropdown"><a href="#"><span>ROS</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="bug2.html">BUG 2 Algorithm</a></li>
+                  <li><a href="a_star.html">A-Star Algorithm</a></li>
+                  <li><a href="slam.html">Autonomous Robot</a></li>
+                  <li><a href="3d_mapping.html">3D Mapping</a></li>
+                </ul>
+              </li>
+                
+              <li class="dropdown"><a href="#"><span>ML / DL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                    <li><a href="self_driving_car.html">Self Driving Car Simulation</a></li>
+                  <li><a href="sports_celebrity.html">Sports Celebrity Face Classifier</a></li>
+                  <li><a href="depth_estimation.html">Depth Estimation from Single Image</a></li>
+                  <li><a href="DCGANs.html">DCGANs</a></li>
+                  <li><a href="PROGANs.html">PROGANs</a></li>
+                </ul>
+              </li>
+                
+              <li class="dropdown"><a href="#"><span>COMPUTER VISION</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="book_identifier.html">Book Name Identifier</a></li>
+                  <li><a href="bottles_nn.html">Labelling Soft Drink Bottles</a></li>
+                  <li><a href="panorama.html">Panorama Generation</a></li>
+                  <li><a href="virtual_painting.html">Virtual Painting</a></li>
+                </ul>
+              </li>
+                
+              <li class="dropdown"><a href="#"><span>IMAGE PROCESSING</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="image_alignment.html">Image Alignment</a></li>
+                  <li><a href="panorama.html">Panorama Generation</a></li>
+                </ul>
+              </li>
+                
+              <li class="dropdown"><a href="#"><span>MECHANICAL DESIGN</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="solidworks.html">Solidworks Design</a></li>
+                  <li><a href="creo.html">PTC Creo Designs</a></li>
+                </ul>
+              </li>
+<!--
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+-->
+            </ul>
+          </li>
+
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="index.html#portfolio">Projects</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li style="color:white">3D Reconstruction using Octomap</li>
+        </ol>
+        <h2 style="color:white">3D Reconstruction and Mapping using Octomap</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+      
+      
+      
+      
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper" >
+              <div class="swiper-wrapper">
+
+<!--
+                <div class="swiper-slide">
+                  <iframe src="https://www.youtube.com/embed/E5a85dA04og" frameborder="0" height="518" width="100%" left="100px"></iframe> 
+                </div>
+
+-->            
+                <div class="rgb_img swiper-slide">
+                    <div>
+                        <h3 style="padding-top: 40px; padding-left: 0px; position: absolute;"><strong style="color:white"> 3D Mapped Environment</strong> </h3>
+                    </div>
+                  <img src="assets/img/portfolio/3d_mapping/3d_mapping.jpg" style="padding-top: 80px;max-width: 100%;margin-left: 0px;">
+                </div>
+                  
+                  
+                <div class="swiper-slide">
+                    <div style="padding-top: 0px;">
+                        <h4><strong style="color:white">Autonomous Navigating Robot with Simultaneous 3D mapping</strong></h4>
+                    </div>
+                    <iframe src="https://youtube.com/embed/yiqjnI-MNUU" frameborder="0" height="818" width="100%" left="100px"></iframe> 
+                </div>
+                  
+                  
+                <div class="swiper-slide">
+                    <div style="padding-top: 0px;">
+                        <h4><strong style="color:white">3D Mapping by Drone</strong></h4>
+                    </div>
+                    <iframe src="https://youtube.com/embed/cCncAlFblD8" frameborder="0" height="818 " width="100%" left="100px"></iframe> 
+                </div>
+                  
+                <div class="swiper-slide ">
+                    <div>
+                        <h4 style="padding-top: 0px; padding-left: 0px; position: absolute; color: white"><strong>Height map representation of 3D mapped Environment </strong></h4>
+                    </div>
+                    <img src="assets/img/portfolio/3d_mapping/color_map_1.gif" style="max-width: 100%; margin-left: 0px;padding-top: 30px;" />
+                    
+                </div>
+                  
+                <div class="swiper-slide ">
+                    <div>
+                        <h4 style="padding-top: 0px; padding-left: 0px; position: absolute; color: white"><strong>Octree-Structure </strong></h4>
+                    </div>
+                    <img src="assets/img/portfolio/3d_mapping/octree_structure.jpg" style="max-width: 100%; margin-left: 0px;padding-top: 30px;" />
+                    
+                </div>
+                  
+                <div class="swiper-slide ">
+                    <div>
+                        <h4 style="padding-top: 0px; padding-left: 0px; position: absolute; color: white"><strong>Octree-Structure </strong></h4>
+                    </div>
+                    <img src="assets/img/portfolio/3d_mapping/octree_Collage.jpg" style="max-width: 100%; margin-left: 0px;padding-top: 30px;" />
+                    
+                </div>
+                  
+                  
+ 
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class = "swiper-button-prev"></div>
+              <div class = "swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+                <h3 style="color: whitesmoke">Project Details</h3>
+              <ul>
+                <li style="color: whitesmoke"><strong>Category</strong>: ROS</li>
+                <li style="color: whitesmoke"><strong>Simulator/Visualizer</strong>: Gazebo/Rviz, Octovis</li>
+                  <li style="color: whitesmoke"><strong>Libraries</strong>: Octomap</li>
+                <li style="color: whitesmoke"><strong>Programming Language</strong>: PYTHON</li>
+                
+                    </ul>
+            </div>
+            <div class="portfolio-description">
+              <h4 style="color: wheat"><u>Objective</u>:To make robot autonomously navigate and simultaneous 3D mapping of an environment. </h4>
+            <p style="color: wheat">
+                <strong>This is a 3D Mapping Problem</strong>, which translates to 3D profiling of an area or object, such as using a pair of a stereo camera/depth camera. Ground-based robots are limited to 2D navigation due to their dynamics. However, since the flying robots like quadrotor can also adjust its vertical position, 3D navigation can be implemented. Navigation in 3D enables the quadrotor more maneuverability to explore its environment, the ability to get a much more complete understanding of the environment, and also navigate the environment in more complex paths. This is especially useful when it comes to obstacle avoidance.</p> 
+                
+            <p style="color: wheat">
+                The 3D mapping is done using Octomap which generate's volumetric 3D environment model. This mapping approach uses octrees and probabilistic occupancy estimation. Each node in an octree represents the space contained in a cubic volume, usually called a voxel. This volume is recursively subdivided into <strong>eight sub-volumes</strong> until a given minimum voxel size is reached. The minimum voxel size determines the resolution of the octree. The Probabilistic Occupancy Estimation is a procedure which estimates the marginal probabilities of presence of object at every location in an area of interest under a simple appearance model, given binary images corresponding to the result of a background-subtraction from different viewpoints. This explicitly represents occupied space, free and unknown areas. The advantage of using Octomap is that it allows for efficient and probabilistic updates of occupied and free space while keeping the memory consumption at minimum.
+                
+                
+                </p>
+                
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+<!--
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Arsha</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+-->
+    <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+<!--  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<!--  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
+<!--  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+    
+  <script>
+      const swiper = new Swiper('.swiper', {
+      loop: true,
+      centeredSlides: true,
+      grabCursor: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+});
+    </script>
+
+</body>
+
+</html>
