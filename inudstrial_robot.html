@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Bug 2 and RANSAC Algorithm</title>
+  <title>Industrial Robot Programming</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -69,7 +69,7 @@
                     <li><a href="self_driving_car.html">Self Driving Car Simulation</a></li>
                   <li><a href="sports_celebrity.html">Sports Celebrity Face Classifier</a></li>
                   <li><a href="depth_estimation.html">Depth Estimation from Single Image</a></li>
-                  <li><a href="DCGANs.html">DCGANs</a></li>   
+                  <li><a href="DCGANs.html">DCGANs</a></li>
                   <li><a href="PROGANs.html">PROGANs</a></li>
                 </ul>
               </li>
@@ -123,9 +123,9 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li style="color:white">Bug 2 and RANSAC Algorithm</li>
+          <li style="color:white">Industrial Robot Programming</li>
         </ol>
-        <h2 style="color:white">Bug 2 and RANSAC Algorithm</h2>
+        <h2 style="color:white">Industrial Robot Programming</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -140,30 +140,30 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
+          <div class="col-lg-15">
             <div class="portfolio-details-slider swiper" >
-              <div class="swiper-wrapper align-items-center">
-
+              <div class="swiper-wrapper">
+                  
+                <div class="swiper-slide ">
                 <div class="swiper-slide">
-                  <iframe src="https://www.youtube.com/embed/E5a85dA04og" frameborder="0" height="518" width="100%" left="100px"></iframe> 
+                <div style="padding-top: 0px;">
+                        <h4><strong style="color:white">FANUC ROBOGUIDE</strong></h4>
+                  </div>
+                  <iframe src="https://www.youtube.com/embed/2xGy4FzGVao" frameborder="0" height="618" width="100%" left="100px"></iframe> 
                 </div>
-
+                </div>
+                
+                <div class="swiper-slide ">
                 <div class="swiper-slide">
-                    <img src="assets/img/portfolio/bug2/bug2.jpg" alt="">
+                <div style="padding-top: 0px;">
+                        <h4><strong style="color:white">FANUC ROBOGUIDE</strong></h4>
+                </div>
+                  <iframe src="https://www.youtube.com/embed/haE6H-BTEws" frameborder="0" height="618" width="100%" left="100px"></iframe> 
+                </div>
                 </div>
                   
-                <div class="swiper-slide">
-                    <img src="assets/img/portfolio/bug2/RANSAC.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bug2/bug2_lidar1.png" alt="">
-                </div>
                   
-                  <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bug2/bug2_lidar.png" alt="">
-                </div>
-
+        
               </div>
               <div class="swiper-pagination"></div>
               <div class = "swiper-button-prev"></div>
@@ -171,28 +171,28 @@
             </div>
           </div>
 
+<!--
           <div class="col-lg-4">
             <div class="portfolio-info">
                 <h3 style="color: whitesmoke">Project Details</h3>
               <ul>
-                <li style="color: whitesmoke"><strong>Category</strong>: ROS</li>
-                <li style="color: whitesmoke"><strong>Simulator</strong>: STAGE: WORLD</li>
-                <li style="color: whitesmoke"><strong>Software</strong>: RVIZ</li>
-                <li style="color: whitesmoke"><strong>Programming Language</strong>: PYTHON</li>
-                
-                    </ul>
+                <li style="color: whitesmoke"><strong>Category</strong>: MECHANICAL DESIGN</li>
+                <li style="color: whitesmoke"><strong>Software</strong>: SOLIDWORKS</li>
+              </ul>
             </div>
             <div class="portfolio-description">
-              <h4 style="color: wheat"><u>Objective</u>: To perform the navigation of robot using the bug2 algorithm and perception using laser range finder to avoid the obstacles and navigate to a given destination. </h4>
-              <p style="color: wheat">
-                  <strong ><u>Bug2 Algorithm</u></strong>: The robot always moves along the line of sight towards the goal and this line is nothing but a straight euclidean distance calculated from the start to end goal.
-                  </p>
-            <p style="color: wheat">
-                  <strong ><u>RANSAC Algorithm</u></strong>: This is used when robot encounters an obstacle. It is equipped with laser range finder to determine the visible walls. RANSAC algorithm takes laser scans as inputs and output a set of lines seen by the robot identifying the obstacles in view and then robot moves itself parallel to the detected lines and keeps following the obstacle until it meets again the line of sight towards the goal.
-                  </p>
-                <p style="color: wheat">So, these lines generated by the RANSAC algorithm are generated from the set of points that laser range finder gives, then it picks two points at random and draw a line. Then it finds out the distance of each of the other points from this line and bin them as inliers and outliers based on if the distance is lesser or greater than a set threshold distance. So, we repeat this for number of iterations until it picks the line that has the greatest number of inliers and drops the other points which are far away from the set threshold.</p>
-            </div>
+              <h4 style="color: whitesmoke"><u>Objective</u>: To draw on a screen using color marker virtually, for better understanding of working of color masks and contours using OpenCV. </h4>
+              <p style="color: whitesmoke">
+                  This may be the era of deep learning and big data, where complex algorithms analyze images by being shown millions of them, but color spaces are still surprisingly useful for image analysis. And virtual painting is the simple concept which make understand about color spaces and segmentation of an object. 
+              </p>
+                
+              <p style="color: whitesmoke"> Here, HSV color space is used out of other 5 color space models (RGB, CMYK, HED, HSL). HSV is the description of hue, saturation and variance/brightness. Using this, thresholding is done and minimum and maximum values of HSV are extracted which detect the specific color of the marker's cap in the frame. This segments the specific color object in the frame which we use it as a binary mask to further detect the contours around this mask. Using the information obtained from coutours like x,y points width and height of the mask in a frame the color blob is printed at top center of the marker cap. The color keeps printing until it keeps detecting the color in frame which emulates the virtual painting. </p>
+                
+              <p style="color: whitesmoke"><strong>More Function to be added</strong>: <br>1) Increase/Decrease in the blob size as the marker moves towards or farther from the camera.<br> 2) Erasing effect.<br> 3) Shapes Autocorrect function.<br> 4) Recognition of direction of motion in frame.</p> 
+                
+             </div>
           </div>
+-->
 
         </div>
 
@@ -313,6 +313,8 @@
   <script>
       const swiper = new Swiper('.swiper', {
       loop: true,
+      centeredSlides: true,
+      grabCursor: true,
 
       pagination: {
         el: '.swiper-pagination',
